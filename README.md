@@ -14,22 +14,6 @@ This project is a visual representation of a graph traversal algorithm using the
 - HTML5 Canvas for rendering graphics.
 - JavaScript for implementing the BFS algorithm and managing the graphical interface.
 
-## Getting Started
-
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/graph-traversal-visualization.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd graph-traversal-visualization
-   ```
-
-3. Open the `index.html` file in your web browser.
-
 ## Code Overview
 
 ### Key Components
