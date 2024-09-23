@@ -1,7 +1,3 @@
-Here's the updated README with an explanation of the BFS algorithm included:
-
----
-
 # Graph Traversal Visualization
 
 This project is a visual representation of a graph traversal algorithm using the Breadth-First Search (BFS) method. It allows users to see how the algorithm navigates through a randomly generated set of points and their connections, ultimately determining the shortest path between two points while also exploring graph theory concepts.
