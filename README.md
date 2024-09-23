@@ -259,7 +259,3 @@ The BFS algorithm not only helps to find the shortest path but also enhances the
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to adjust any sections as needed!
