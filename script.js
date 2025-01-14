@@ -158,7 +158,7 @@ class Point {
 }
 
 class Line {
-    constructor(p1, p2, color = "black", lineWidth = 1) {
+    constructor(p1, p2, color = "gray", lineWidth = 1) {
         this.p1 = p1;
         this.p2 = p2;
         this.color = color;
