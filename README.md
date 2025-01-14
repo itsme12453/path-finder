@@ -7,7 +7,7 @@ This project is a visual representation of a graph traversal algorithm using the
 - Visual representation of points and connections.
 - Interactive drawing of the BFS process with color-coded lines.
 - Calculation and visualization of the shortest path in the graph.
-- Graph theory application to determine the possibility of traversing each edge exactly once (Eulerian path).
+- Graph theory application to determine the possibility of traversing each edge exactly once (Eulerian trail).
 
 ## Technologies Used
 
@@ -113,7 +113,7 @@ function bfs(start, end, callback) {
 
 ## Graph Theory Application
 
-In this project, we apply fundamental concepts from graph theory to determine whether it is possible to traverse each line (edge) of the graph exactly once, known as the Eulerian path problem. This is a classic problem in graph theory that involves understanding the connectivity of vertices (points) and edges (lines) in a graph.
+In this project, we apply fundamental concepts from graph theory to determine whether it is possible to traverse each line (edge) of the graph exactly once, known as the Eulerian trail problem. This is a classic problem in graph theory that involves understanding the connectivity of vertices (points) and edges (lines) in a graph.
 
 ### Key Concepts
 
@@ -121,9 +121,9 @@ In this project, we apply fundamental concepts from graph theory to determine wh
    - **Vertices** represent the points in the graph, which are generated randomly and visually represented on the canvas.
    - **Edges** are the lines connecting the vertices, determined by the proximity of the points.
 
-2. **Eulerian Path**:
-   - An **Eulerian path** is a trail in a graph that visits every edge exactly once.
-   - A connected graph can have an Eulerian path if and only if:
+2. **Eulerian trail**:
+   - An **Eulerian trail** is a trail in a graph that visits every edge exactly once.
+   - A connected graph can have an Eulerian trail if and only if:
      - It has exactly zero or two vertices of odd degree (number of edges incident to the vertex).
      - All vertices with non-zero degree belong to a single connected component.
 
@@ -155,7 +155,7 @@ for (let i = 0; i < coords.length; i++) {
 }
 ```
 
-#### Checking for Eulerian Path Conditions
+#### Checking for Eulerian trail Conditions
 
 After counting the degrees, we assess how many vertices have odd degrees. The logic is implemented as follows:
 
@@ -178,11 +178,11 @@ if (odd > 2) {
 ### Explanation of the Check
 
 1. **Odd Degree Counting**:
-   - We iterate through the `connections` object to count how many vertices have an odd number of edges. This is crucial because, according to graph theory, having more than two odd-degree vertices implies that it’s impossible to find an Eulerian path.
+   - We iterate through the `connections` object to count how many vertices have an odd number of edges. This is crucial because, according to graph theory, having more than two odd-degree vertices implies that it’s impossible to find an Eulerian trail.
 
 2. **Decision Logic**:
    - If there are more than two vertices with an odd degree, the algorithm concludes that it is "IMPOSSIBLE" to traverse all edges without retracing any.
-   - If there are zero or two vertices with an odd degree, it’s "POSSIBLE" to traverse the graph according to the rules of Eulerian paths.
+   - If there are zero or two vertices with an odd degree, it’s "POSSIBLE" to traverse the graph according to the rules of Eulerian trails.
 
 ## Explanation of the BFS Algorithm
 
